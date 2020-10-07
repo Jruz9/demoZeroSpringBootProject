@@ -15,7 +15,7 @@ public class HomeController {
         return "index";  // the name of the webpage
     }
     @RequestMapping(value = "/create",method = RequestMethod.POST)
-    public String processFormData(){
-        return "";
+    public String processFormData(User user){
+        return "result";
     }
 }
